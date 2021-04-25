@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"measure_heartbeat_lcd\startup_stm32f103xb.o"
+"measure_heartbeat_lcd\main.o"
+"measure_heartbeat_lcd\stm32f1xx_it.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_msp.o"
+"measure_heartbeat_lcd\i2c-lcd.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_gpio_ex.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_i2c.o"
+"measure_heartbeat_lcd\stm32f1xx_hal.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_rcc.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_rcc_ex.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_gpio.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_dma.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_cortex.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_pwr.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_flash.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_flash_ex.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_exti.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_tim.o"
+"measure_heartbeat_lcd\stm32f1xx_hal_tim_ex.o"
+"measure_heartbeat_lcd\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Measure_HeartBeat_LCD\Measure_HeartBeat_LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Measure_HeartBeat_LCD.map" -o Measure_HeartBeat_LCD\Measure_HeartBeat_LCD.axf
